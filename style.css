@@ -1,0 +1,590 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(242, 236, 190);
+    margin-top: 75px;
+    font-family: 'Playfair Display', serif;
+}
+
+#logo{
+    width: 50px;
+}
+#menu{
+    background-color: rgb(255, 249, 201);
+    
+}
+#boxIconacarr{
+    gap: 20px;
+    align-items: center;
+}
+#pallino{
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.hidden{
+    opacity: 0;
+}
+#iconaCarrello{
+    position: relative;
+}
+#iconaCarrello>a>i{
+    font-size: 25px;
+    color: rgb(198, 61, 47);
+    text-decoration: none;
+}
+#btncerca{
+    background-color: rgb(255, 187, 92);
+    
+}
+#btncerca:hover{
+    background-color: rgb(255, 155, 80);
+}
+#carouselExampleIndicators{
+    position: relative;
+}
+.carousel-item{
+    height: 80vh;
+    position: relative;
+    
+}
+.carousel-item>img{
+    height: 100%;
+    object-fit: cover;
+}
+#box{
+    width: 100%;
+    height: 50vh;
+    background-color:rgb(255, 249, 201);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    animation: fadeIn 10s ease-in-out forwards;
+}
+
+#titolo,#slogan{
+   text-align: center;
+    animation: slideFromLeft 5s ease-in-out forwards, fadeOut 5s 5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+#btn{
+    border-radius: 5px;
+    background-color: rgb(255, 187, 92);
+    padding: 7px;
+    border: 1px solid rgb(255, 187, 92);
+    cursor: pointer;
+    box-shadow: 0 0 10px  rgb(198, 61, 47);
+    transition: box-shadow 0.3s;
+    
+}
+#btn>a{
+    text-decoration: none;
+    color: black;
+}
+#btn:hover{
+    background-color:rgb(255, 155, 80);
+    box-shadow: 0 0 20px rgb(198, 61, 47);
+}
+#btnIscriviti{
+    background-color: rgb(255, 187, 92);
+    padding: 7px;
+    border: 1px solid rgb(255, 187, 92);
+}
+#btnIscriviti:hover{
+    background-color:rgb(255, 155, 80);
+}
+
+
+#boxcopertina{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    animation: fadeIn 7s ease-in-out forwards;
+
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+
+#scrittaCopertina{
+    width: 50%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    z-index: 3;
+}
+#scrittaCopertina>h3{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+#scrittaCopertina>p{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 39%);
+    top:0;
+    left: 0;
+}
+    
+#copertina{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+}
+
+#boxgriglia{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap:50px;
+    padding: 60px;
+    margin: 0 !important;
+    justify-content: space-between;
+
+}
+
+.card{
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.1);
+      
+}
+
+.foto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.descrizioneCard{
+    display: none;
+}
+.nomeartista{
+    display: none;
+}
+.card>a{
+    text-decoration: none;
+    color: rgb(255, 155, 80);
+    cursor: pointer;
+}
+.card>a:hover{
+    color:rgb(198, 61, 47)
+}
+.carrelloCard{
+    width: fit-content;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.carrelloCard:hover{
+    color: green
+}
+
+#boxdettaglio{
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    padding: 60px;
+}
+#boximmdett{
+    width: 50%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    animation: fadeIn 7s ease-in-out forwards;
+
+}
+hr{
+    width: 80%;
+    margin: 0 auto
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+
+#dettaglio1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#boxdescrizione{
+    width: 500px;
+    height: 500px;
+    gap: 40px;
+    animation: slideFromRight 5s ease-in-out forwards, fadeOut 5s 5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#prezzo1{
+    color: rgb(255, 155, 80);
+    font-size: 30px;
+}
+#artista{
+    font-size: 20px;
+
+}
+#descrizione1{
+    font-size: 20px;
+}
+
+#boxdescrizione>a{
+    text-decoration: none;
+    color: rgb(255, 155, 80);
+}
+
+#boxdescrizione>a:hover{
+    cursor: pointer;
+}
+#boxpiccole{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    gap: 40px;
+    
+}
+.imgpiccole{
+    width: 20%;
+}
+
+#contenitorePrincipale{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    padding: 0 90px;
+}
+#contenitoreSx{
+    width: 70%;
+    height: 750px;
+    
+}
+#contenitoreDx{
+    width: 30%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+}
+.boxcarrello{
+    width: 100%;
+    height: 250px;
+    padding: 40px;
+    display: flex;
+    
+
+}
+#animazione1{
+    animation: fadeIn 5s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+
+#animazione2{
+    animation: fadeIn 7s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+}
+#animazione3{
+    animation: fadeIn 10s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+.boximgCarrello{
+    width: 200px;
+    height: 200px;
+    padding: 50px;
+    
+}
+.elCarrelloImg{
+    width: 100px;
+    height: 100px;
+}
+.testiEl{
+    width: 120px;
+    height: 200px;
+    
+}
+.prezzo,.cestino{
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    height: 150px;
+    align-items: center;
+    font-weight: bolder;
+}
+
+#boxdettaglipagamento{
+    width: 90%;
+    height: 450px;
+    background-color:rgb(255, 249, 201) ;
+    padding: 40px;
+   
+}
+#pagamento{
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(226, 94, 62);
+    margin-top: 50px;
+    
+}
+#pagamento:hover{
+    background-color: rgb(198, 61, 47);
+}
+#pagamento>a{
+    text-decoration: none;
+    color: white;
+}
+#icona{
+    width: 100%;
+    padding: 20px;
+    height: 50px;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 187, 92);
+}
+#icona:hover{
+    background-color: rgb(255, 155, 80);
+}
+#paypall{
+    width: 30%;
+}
+
+#boxPagamento, #boxPagamento2 {
+    display: flex;
+    width: 100%;
+    padding: 80px;
+    gap: 30px;
+    justify-content: center;
+}
+#boxform, #boxform2{
+    width: 40%;
+}
+#boxform > form{
+    display: flex;
+    flex-direction: column;
+}
+#boxform2 > form{
+    display: flex;
+    flex-direction: column;
+}
+#boxform2 > form >input{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#boxcompletacquisto{
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+#boximgtesti{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+#controllacarbtn{
+    border: 0;
+    padding: 10px;
+    width: 200px;
+    background-color: rgb(255, 187, 92);
+    border-radius: 5px;
+}
+#controllacarbtn:hover{
+    background-color: rgb(255, 155, 80);
+}
+
+#controllacarbtn>a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+#confermabtn{
+    width: 200px;
+    background-color:  rgb(226, 94, 62);
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+#confermabtn:hover{
+    background-color: rgb(198, 61, 47);
+}
+#confermabtn>a{
+    text-decoration: none;
+    color: white;
+}
+
+#boxcompletacquisto>#boximgtesti>img{
+    width: 50%;
+}
+
+#datiCarta {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#boxcompletacquisto>button>a{
+    text-decoration: none;
+}
+.grazie{
+    color: rgb(198, 61, 47);
+    animation: fadeIn 6s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+
+@media (max-width: 768px){
+    #boxdettaglio{
+        flex-direction: column;
+    
+    }
+    #boximmdett{
+        width: 100%;
+        height: 300px;
+    }
+    #boxdescrizione{
+        width:100%;
+    }
+    #boxpiccole{
+        width: 100%;
+        height: fit-content;
+        gap: 10px;
+        margin-left: 9px;
+        flex-wrap: wrap
+    }
+    .imgpiccole{
+        width: 30%;
+        object-fit: cover;
+    }
+    #contenitorePrincipale{
+        flex-direction: column;
+        width: 100%;
+        height: 1300px;
+        padding: 0;
+    
+    }
+    #contenitoreSx{
+        width: 100%;
+    }
+    .boximgCarrello{
+        margin-left: -70px;
+    }
+    #contenitoreDx {
+        width: 100%;
+        height: 430px;
+        margin-left: 20px;
+    }
+    #boxPagamento, #boxPagamento2{
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+    }
+    #boxcompletacquisto{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        margin-left: 50px;
+    }
+    
+}
+
+
